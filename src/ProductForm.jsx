@@ -158,7 +158,7 @@ function ProductForm() {
         <div className=' bg-black'>
             <div className='flex justify-center items-center '> <img src="https://axionfoam.com/axionlogo.png" alt="" className='w-36'/></div>
      
-            <div className="md:w-96 mx-auto p-5 bg-slate-200 flex justify-center items-center flex-col">
+            <div className="md:w-96 mx-auto p-5  flex justify-center items-center flex-col">
            
             <form onSubmit={handleSubmit} className='space-y-6'>
                 <input
@@ -209,7 +209,7 @@ function ProductForm() {
                     required
                 />
              <span className='flex justify-center items-center'>
-             <button type="submit" className="text-3xl border border-gray-400 hover:bg-black hover:text-white p-2">
+             <button type="submit" className="text-3xl border border-gray-400 hover:bg-black hover:text-white p-1">
              <IoIosAddCircle />
 
                 </button>
