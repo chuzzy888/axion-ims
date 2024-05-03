@@ -1,0 +1,21 @@
+
+/* Add this CSS to your global styles if it's not already handled by Tailwind */
+.hide-scrollbar {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+  }
+  
+::placeholder{
+  font-family: cursive;
+  font-size: smaller;
+}
+
+
+
+
+
+
+
