@@ -273,28 +273,28 @@ function ProductTable() {
             </div>
             {showEditModal && editingProduct && (
                 <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
-                    <div className="bg-white p-8 rounded shadow-lg">
+                    <div className="bg-white p-8 rounded shadow-lg flex justify-center items-center flex-col">
                         <div className='flex justify-center items-center gap-2'>
                             <FaRegEdit className='mb-2' />
                             <h3 className="text-lg font-medium mb-2 text-center text-slate-500">Edit Product</h3>
                         </div>
 
-                        <span className='flex justify-center items-center mb-4 bg-green-500 p-2 rounded-xl w-32'>
+                        <span className='flex justify-center items-center mb-4 bg-green-500 p-2 rounded-3xl w-32'>
                             <p className="text-white font-medium  ">{editingProduct.name}</p>
                         </span>
 
                         <div className="flex justify-center items-center mb-2">
-                            <span className="text-gray-600 mr-2 mb-2">QTY</span>
-                            <input type="number" value={newQuantity} onChange={(e) => setNewQuantity(e.target.value)} placeholder="Qty" className="mb-2 p-2 border-2 border-gray-300 rounded block w-full" />
+                            <span className="text-gray-600 mr-2 mb-2"></span>
+                            <input type="number" value={newQuantity} onChange={(e) => setNewQuantity(e.target.value)} placeholder="Qty" className="mb-2  p-2 border-2 border-gray-300 rounded-xl block w-full" />
                         </div>
 
                         <div className="flex justify-center items-center mb-2">
-                            <span className="text-gray-600 mr-2">₦</span>
-                            <input type="number" value={newPrice} onChange={(e) => setNewPrice(e.target.value)} placeholder="Price" className="p-2 border-2 border-gray-300 rounded block w-full" />
+                            <span className="text-gray-600 mr-2"></span>
+                            <input type="number" value={newPrice} onChange={(e) => setNewPrice(e.target.value)} placeholder="Price" className="p-2 border-2 border-gray-300 rounded-xl block w-full" />
                         </div>
-                        <input type="date" value={newDate} onChange={(e) => setNewDate(e.target.value)} placeholder="Date" className="mb-2 p-2 border-2 border-gray-300 rounded block w-full" />
+                        <input type="date" value={newDate} onChange={(e) => setNewDate(e.target.value)} placeholder="Date" className="mt-2 p-2  border-2 border-gray-300 rounded-xl block w-11/12" />
                         <div className='flex justify-center items-center'>
-                            <button onClick={handleUpdate} className="bg-gray-600 hover:bg-gray-500 text-white px-4 py-2 rounded">
+                            <button onClick={handleUpdate} className="bg-gray-600 hover:bg-gray-500 text-white px-4 py-2 mt-5 rounded-3xl">
                                 Update
                             </button>
                         </div>
